@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo web-search copybuffer)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -129,3 +129,5 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 alias lc='colorls'
 alias config='/usr/bin/git --git-dir=/home/user/.cfg/ --work-tree=/home/user'
+alias cpwd='pwd | xclip -selection clipboard'
+alias cfile='xclip -sel clip <'
