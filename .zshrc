@@ -131,3 +131,6 @@ alias lc='colorls'
 alias config='/usr/bin/git --git-dir=/home/user/.cfg/ --work-tree=/home/user'
 alias cpwd='pwd | xclip -selection clipboard'
 alias cfile='xclip -sel clip <'
+alias curlt="curl -w \"@$HOME/curl-format.txt\" -o /dev/null -s "
+alias air='~/go/bin/air'
+alias imagetext='./image-to-text.sh'
